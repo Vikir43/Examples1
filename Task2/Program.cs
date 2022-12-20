@@ -3,23 +3,27 @@
 WriteLine("Введите число : ");
 int a = int.Parse(ReadLine()!);
 
-if ( a == 1 )
+if ( a == 1 ) {
     WriteLine("Понедельник");
-
-if ( a == 2 )
+}
+else if ( a == 2 ){
     WriteLine("Вторник");
-
-if ( a == 3 )
+}
+else if ( a == 3 ){
     WriteLine("Среда");
-
-if ( a == 4 )
+}
+else if ( a == 4 ){
     WriteLine("Четверг");
-
-if ( a == 5 )
+}
+else if ( a == 5 ){
     WriteLine("Пятница");
-
-if ( a == 6 )
+}
+else if ( a == 6 ){
     WriteLine("Суббота");
-
-if ( a == 7 )
-    WriteLine("Воскресеньк");  
+}
+else if ( a == 7 ){
+    WriteLine("Воскресенье");
+}
+else {
+    WriteLine("Введено неверное число");
+}    
