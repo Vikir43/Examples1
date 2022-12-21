@@ -4,15 +4,16 @@ WriteLine("Введите три числа:  ");
 int a = int.Parse(ReadLine()!);
 int b = int.Parse(ReadLine()!);
 int c = int.Parse(ReadLine()!);
-int max = a;
+int max = 0;
 
-if ( b > max ) {
+if ( a > max ) {
+    max = a;
+}
+if (b > max ) {
     max = b;
 }
-if (c >max ) {
-    max = c;
+ if (c > max ) {
+    max = c;   
 }
 
-WriteLine($"Максимальнок число: {max} ");
-
-  
+WriteLine($"Максимальнок число: {max} ");  
