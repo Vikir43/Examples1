@@ -5,11 +5,13 @@ int a = int.Parse(ReadLine()!);
 WriteLine("Введите число b: ");
 int b = int.Parse(ReadLine()!);
 
-if (b * b == a)
+int max = a;
+
+if (a > b)
 {
-    WriteLine("Да");
+    WriteLine("Максимальное число {a} ");
 }
 else 
 {
-    WriteLine("Нет");
+    WriteLine("Максимальноне число (b) ");
 }
