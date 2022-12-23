@@ -5,5 +5,5 @@ int a = int.Parse(ReadLine()!);
 WriteLine("Введите число b : ");
 int b = int.Parse(ReadLine()!);
 
-WriteLine( a*a==b || b*b == a?  "Да": "Нет");
+WriteLine( a*a==b? "b является квадратом a" : b*b == a?  "a является квадратом b" : "Нет, не является");
 
