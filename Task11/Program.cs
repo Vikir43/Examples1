@@ -1,8 +1,15 @@
-﻿using statik System.Console;
+﻿using static System.Console;
 
+Write("Введите первое число: ");
 int a = int.Parse(ReadLine()!);
-Writeline("Введите первое число: ");
+Write("Введите второе число: ");
 int b = int.Parse(ReadLine()!);
-WriteLine("Ввудите второе число: ");
 
-
+if(a % b == 0)
+{
+    WriteLine("Кратно");
+}
+else
+{
+    WriteLine($"Не кратно, остаток {a%b}");
+}
