@@ -5,11 +5,12 @@ int a = int.Parse(ReadLine()!);
 Write("Введите второе число: ");
 int b = int.Parse(ReadLine()!);
 
-if(a % b == 0)
-{
-    WriteLine("Кратно");
-}
-else
-{
-    WriteLine($"Не кратно, остаток {a%b}");
-}
+//if(a % b == 0)
+//{
+    //WriteLine("Кратно");
+//}
+//else
+//{
+   // WriteLine($"Не кратно, остаток {a%b}");
+//}
+WriteLine(a % b == 0?"Кратно":$"Некратно,остаток {a%b}" );
