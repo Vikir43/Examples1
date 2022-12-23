@@ -5,12 +5,12 @@
  Write("Введите второе число: ");
  int b = int.Parse(ReadLine()!);
 
- //WriteLine("{a>b}? ">": $"{a<b}? "<":);
- if (a>b)
- {
-    WriteLine(">");
- }
- else
- {
-    WriteLine ("<");
- }
+ WriteLine(a>b? ">": "< " );
+// if (a>b)
+ //{
+   // WriteLine(">");
+ //}
+ //else
+ //{
+   // WriteLine ("<");
+ //}
