@@ -5,7 +5,7 @@
  Write("Введите второе число: ");
  int b = int.Parse(ReadLine()!);
 
- WriteLine(a>b? ">": "< " );
+ WriteLine(a == b? "=": a> b? ">": "< " );
 // if (a>b)
  //{
    // WriteLine(">");
