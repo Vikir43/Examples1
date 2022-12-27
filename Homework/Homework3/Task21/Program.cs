@@ -1,25 +1,14 @@
 ﻿using static System.Console;
+Clear();
 
-WriteLine("Введщите количество деталей за смену: ");
-int detal = int.Parse(ReadLine()!);
+WriteLine($"Точка А -> Введите координаты x, y, z ");
+int ax  = int.Parse(ReadLine()!);
+int ay  = int.Parse(ReadLine()!);
+int az  = int.Parse(ReadLine()!);
+WriteLine("Точка B -> Введите координаты x  y  z  ");
+int bx  = int.Parse(ReadLine()!);
+int by  = int.Parse(ReadLine()!);
+int bz  = int.Parse(ReadLine()!);
 
-WriteLine("Введите количество токарей младшего разряда:  ");
-int count_tokar_1 = int.Parse(ReadLine()!);
-
-WriteLine("Введите количество токарей старшего разряда:  ");
-int count_tokar_4 = int.Parse(ReadLine()!);
-
-int tokar_1 = 1;
-int tokar_4 = 2 * (tokar_1+tokar_1);
-
-int sum = tokar_1 * count_tokar_1 + tokar_4 * count_tokar_4;
-
-if(detal % sum ==0)
-{
-    WriteLine("Это правда");
-    WriteLine($"Каждый токарь младшего разряда сделал {detal/sum*tokar_1}");
-    WriteLine($"Каждый токарь старшего разряда сделал {detal/sum*tokar_4}");
-}
-else {
-    WriteLine("Они лгут");
-}
+double d = Math.Sqrt(Math.Pow((bx-ax),2)+Math.Pow((by-ay),2)+Math.Pow((bz-az),2));
+WriteLine($"{d:f2}");
